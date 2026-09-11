@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:title="@string/settings_category_video_audio_title">
+
+    <ListPreference
+        android:defaultValue="@string/default_resolution_value"
+        android:entries="@array/resolution_list_description"
+        android:entryValues="@array/resolution_list_values"
+        android:key="@string/default_resolution_key"
+        android:title="@string/default_resolution_title"
+        app:iconSpaceReserved="false"
+        app:useSimpleSummaryProvider="true" />
+
+    <ListPreference
+        android:defaultValue="@string/limit_mobile_data_usage_value"
+        android:entries="@array/limit_data_usage_description_list"
+        android:entryValues="@array/limit_data_usage_values_list"
+        android:key="@string/limit_mobile_data_usage_key"
+        android:title="@string/limit_mobile_data_usage_title"
+        app:iconSpaceReserved="false"
+        app:useSimpleSummaryProvider="true" />
+
+    <ListPreference
+        android:defaultValue="@string/default_video_format_value"
+        android:entries="@array/video_format_description_list"
+        android:entryValues="@array/video_format_values_list"
+        android:key="@string/default_video_format_key"
+        android:title="@string/default_video_format_title"
+        app:iconSpaceReserved="false"
+        app:useSimpleSummaryProvider="true" />
+
+    <ListPreference
+        android:defaultValue="@string/default_audio_format_value"
+        android:entries="@array/audio_format_description_list"
+        android:entryValues="@array/audio_format_values_list"
+        android:key="@string/default_audio_format_key"
+        android:title="@string/default_audio_format_title"
+        app:iconSpaceReserved="false"
+        app:useSimpleSummaryProvider="true" />
+
+    <ListPreference
+        android:defaultValue="@string/autoplay_value"
+        android:entries="@array/autoplay_type_description"
+        android:entryValues="@array/autoplay_type_key"
+        android:key="@string/autoplay_key"
+        android:summary="@string/autoplay_summary"
+        android:title="@string/autoplay_title"
+        app:iconSpaceReserved="false"
+        app:useSimpleSummaryProvider="true" />
+</PreferenceScreen>

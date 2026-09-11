@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:title="@string/settings_category_downloads_title">
+
+    <SwitchPreferenceCompat
+        android:defaultValue="false"
+        android:key="@string/downloads_storage_ask"
+        android:summary="@string/downloads_storage_ask_summary"
+        android:title="@string/downloads_storage_ask_title"
+        app:iconSpaceReserved="false" />
+
+    <SwitchPreferenceCompat
+        android:defaultValue="true"
+        android:key="@string/storage_use_saf"
+        android:summary="@string/downloads_storage_use_saf_summary"
+        android:title="@string/downloads_storage_use_saf_title"
+        app:iconSpaceReserved="false" />
+
+    <Preference
+        android:dialogTitle="@string/download_path_dialog_title"
+        android:key="@string/download_path_video_key"
+        android:summary="@string/download_path_summary"
+        android:title="@string/download_path_title"
+        app:iconSpaceReserved="false" />
+
+    <Preference
+        android:dialogTitle="@string/download_path_audio_dialog_title"
+        android:key="@string/download_path_audio_key"
+        android:summary="@string/download_path_audio_summary"
+        android:title="@string/download_path_audio_title"
+        app:iconSpaceReserved="false" />
+</PreferenceScreen>
