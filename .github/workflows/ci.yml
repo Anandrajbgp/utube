@@ -18,6 +18,7 @@ on:
       - '.github/ISSUE_TEMPLATE/**'
   push:
     branches:
+      - main
       - dev
       - master
     paths-ignore:
